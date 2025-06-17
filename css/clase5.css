@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* siempre */
+}
+body{
+    background-color: blanchedalmond;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    background-color: blueviolet;
+    padding: 20px 40px;
+  
+  
+}
+header nav{
+    text-align:center;
+   
+}
+nav a{
+    color: #000;
+    text-decoration: none;
+}
+ a:hover{
+  color:blue;
+  text-decoration: solid;
+  
+
+}
+nav{
+    margin-top: 1px;
+}
+main{
+    background-color: aqua;
+    padding: 20px 20px;
+}
+section{
+    background-color: black;
+    color: aliceblue;
+    border-radius: 10px;
+}
