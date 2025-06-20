@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.hero{
+    background-color: #fce4ec;
+     /* background-image: url(../img/auris1.jpg); */
+    background-image:
+    /* le voy a dar opacidad a la imagen */
+    linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.1)),
+    url(../img/elefant.jpg);
+      /* linear-gradient(rgb(56, 27, 182), rgb(157, 138, 211), rgb(100, 92, 211)); */
+    /* adelatnte podes poner la direccion de los colores */
+    /* si no pones nada es para q quede exactaente como el orden q pusise, red violet y blue en estecaso */
+
+    /* ejemplos de colores gradientes */
+    /* linear-gradient(to right,red,violet ,blue), */
+   
+   /* entonces es backgrond-image como siempre, 
+   luego el gradiente(linear-gradient), coma, la url de la imagen url(../laimagen)
+   ese seria el orden */
+
+
+    height:80vh;
+    /* es 100 viuwport q es 100 de td el navegador, en realidad se amolda al monitor */
+    /* el vh (viuwport se ua solo en el hero, por lo menos el 100vh */
+    /* vh es altura del viuwport, se adapta a los monitores */
+    /* uniad de medida viuwport (se adapta a cualcquier tipo de medida */
+
+    /* 80vh esta bueno ya q no ocupa todoo y esta bueno pq es lo q estas haviendo vs es tu portfolio y es sol una linea de codigo */
+    /* se empezo a usar as para q la gente no crea q solo esa es la pag ya q se ian y no hacian scroll ya q ocupaba todo */
+    /* con 80vh no ocupa td se logra ver q la pag sigue entonces se quedan */
+
+    /* siempre la imagen se va a intentar ajustar por lo q se va a repetir pero de forma rara, y se vera mal */
+    /* para evitar esto usas:  */
+    /*  */
+    background-repeat:no-repeat;
+    /*  */
+    /* y esto hace q la imagen no se repita y se vea bien */
+
+    /* esto hara q no se repita pero dejara un espacio */
+    /* para q no quede ese espacio feo usas backround-size */
+    /* aqui nunca se usa el auto */
+    /* se usa contain para ... */
+    /* o cover q se amolda  */
+    background-size: cover;
+    /* background-size: contain; */
+
+    /* posicion de la imagen */
+    background-position:center;
+    /* background-position:right; */
+    
+
+}
+
+h1{
+    text-align: center;
+    /* texto centrado */
+    font-size: 40px;
+    /* tamaño de letra */
+    /* letter-spacing: 25px; */
+    /* espacio entre letras */
+    color: white;
+   
+}
+div{
+    background-color:rgb(146, 242, 235);
+    /* esta es buena data, el padding debe ir entre 5 a como mucho 35px */
+    padding: 5px;
+    /* ya entendi el padding, lo entendi pq en el
+    selector universal puse padding y margin 0 por lo q entonces ahora veo facil los cambios
+    
+    padding venria a hacer el contedido en sii, se va a agandar o achicar ese contenedo, osea la caja
+    si pongo 5px se va a agranar arriba abajo izieda y dercha 5px, pero no hara bordes
+    antes veias los bordes pq no ponias padding 0 al inicio
+    
+    si vos ques algun borde osea margen es MARGIN me di cuenta pq con padding 0 yo al poner los px queda pegado 
+    pegado a los bordes y solo se agrana la caja, para vs dar ese espacio entre etiquetas o lo q sea usas margin*/
+
+    height: 150px;;
+     /* heigth es la altura |*/
+
+    width: 150px;
+    /* width es el ancho -- */
+
+    margin-top:20px;
+    /* da un espacio en la parte de ariba  */
+
+    border: 1px solid gray;
+}
