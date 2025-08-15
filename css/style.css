@@ -48,6 +48,9 @@ p{
     margin: 12px;
     /* line-height: 19px; */
     /* no entieno para q es */
+    /* ya se es separacion entra palabras
+    ose entre lineas, parrafos ponele
+    una linea bajo la otra, bueno es espacio q habra */
 }
 div p{
     color:rgb(111, 245, 111);

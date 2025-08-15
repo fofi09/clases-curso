@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1 id="titul">hola</h1>
+  <p id="parrafo">parrafo</p>
+
+    <h2 id="CAMBIO">hol</h2>
+
+  <BUtton id="boton">HECE CLICK</BUtton>
+
+
+  <h5>j <span id="resultado">0</span></h5>
+
+  <button id="mas">+</button>
+  <button id="menos" >-</button>
+
+
+  <!-- cambiar imagen -->
+<div class="contenedora">
+    <img id="imagen" src="img/auris1.jpg" alt="">
+
+    <img id="imagen2">
+</div>
+    
+ <input type="number" id="fecha">
+<button id="calcularEdad">calcular edad</button>
+<p id="resultEdad"></p> 
+
+    <script>
+        //selector de elemento, como vas a llamar las etiquetas desde javascript al html
+// let hola= document.getElementById('titul').innerHTML= 'hola mundoo';
+
+//  //con esto podes usar varias clases a la vez, va elementos ya q ponele la clase se 
+//  //llamalista y esa misma clase eta en varios elementos, tmb pasa pq las clases son reutilizables,
+//  //los id no, esos son unicos
+// let contenido= document.querySelectorAll(".parrafo")
+
+
+// // cambio.innerHTML='LOCO'
+
+// let boton=document.querySelector('#boton');
+
+// //el addevenlisteer espera a q algo suceda
+// // boton.addEventListener(evento,funcion)
+// //esa seria la estructura, espera un evento y una funcion
+
+// //el evento en este caso es click, y esta funcion la cual cree justo abajo
+//  boton.addEventListener('click',mostrarMensaje)
+
+//  let cambio= document.getElementById("CAMBIO")
+//  function mostrarMensaje(){
+//     cambio.innerHTML='LOCO'
+//  }
+
+ //orden de javascript: variables, funciones, eventos
+ //1. variables
+ let resultado= document.getElementById('resultado');
+ let mas=document.getElementById('mas');
+ let menos= document.getElementById('menos');
+
+
+     let contador=0;
+
+ //las funciones y las variables no pueden tener el mismo nombre ya q daria eror
+ //es decir en este caso no le puedo poner de nombre mas
+ //2.funciones
+function sumarClicks(){
+    // resultado.textContent= contador++
+    contador=contador+1
+    resultado.textContent=contador
+}
+
+ function restar(){
+    // resultado.textContent= contador--
+    //  contador=contador-1
+    contador--
+    resultado.textContent=contador
+}
+//3.evento
+ mas.addEventListener('click',sumarClicks)
+ //esa bien, no te funcionaba pq tenias mal escrto este 
+menos.addEventListener('click',restar)
+
+
+//1:43 cambiar imagen
+//acordate q el orden es variables funciones, eventos
+//y comillas dobles aqui ('imagen'), td lo demas en general comillas simples
+let imagen=document.getElementById('imagen')
+
+function cambiarImagen(){
+    imagen.src="img/elefant.jpg"
+}
+
+imagen.addEventListener('click',cambiarImagen)
+
+//simulador e edad, ingreso año de nacimiento, calculo edad y q de resultado
+//1:48
+//1.variables
+
+let fecha=document.getElementById("fecha");
+let botonEdad=document.getElementById('calcularEdad')
+let resultEdad=document.getElementById('resultEdad')
+
+//2.funciones
+function calcEdad(){
+    console.log(fecha.value)
+    console.log(botonEdad.textContent)
+    
+    let edad= 2025 - Number(fecha.value);
+    resultEdad.textContent=edad;
+}
+//3.eventos
+botonEdad.addEventListener('click',calcEdad)
+
+//2:24
+    </script>
+</body>
+</html>
